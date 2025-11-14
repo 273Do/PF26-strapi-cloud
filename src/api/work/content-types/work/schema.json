@@ -36,6 +36,15 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::technology.technology"
+    },
+    "githubLink": {
+      "type": "string"
+    },
+    "appLink": {
+      "type": "string"
+    },
+    "otherLink": {
+      "type": "string"
     }
   }
 }
