@@ -11,10 +11,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "uuid": {
-      "type": "customField",
-      "customField": "plugin::strapi-advanced-uuid.uuid"
-    },
     "title": {
       "type": "string",
       "required": true
