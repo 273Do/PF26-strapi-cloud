@@ -45,6 +45,13 @@
     },
     "otherLink": {
       "type": "string"
+    },
+    "uuid": {
+      "type": "customField",
+      "customField": "plugin::strapi-advanced-uuid.uuid",
+      "options": {
+        "disable-auto-fill": false
+      }
     }
   }
 }
