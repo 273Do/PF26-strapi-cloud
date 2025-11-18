@@ -460,7 +460,7 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
 export interface ApiShowcaseShowcase extends Struct.CollectionTypeSchema {
   collectionName: 'showcases';
   info: {
-    displayName: 'showcase';
+    displayName: 'Showcase';
     pluralName: 'showcases';
     singularName: 'showcase';
   };
