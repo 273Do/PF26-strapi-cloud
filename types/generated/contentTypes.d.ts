@@ -498,7 +498,7 @@ export interface ApiShowcaseShowcase extends Struct.CollectionTypeSchema {
     contentLink: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
-          localized: true;
+          localized: false;
         };
       }>;
     createdAt: Schema.Attribute.DateTime;
@@ -508,7 +508,7 @@ export interface ApiShowcaseShowcase extends Struct.CollectionTypeSchema {
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
-          localized: true;
+          localized: false;
         };
       }>;
     description: Schema.Attribute.Text &
@@ -526,7 +526,7 @@ export interface ApiShowcaseShowcase extends Struct.CollectionTypeSchema {
     media: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'> &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
-          localized: true;
+          localized: false;
         };
       }>;
     publishedAt: Schema.Attribute.DateTime;
@@ -544,7 +544,7 @@ export interface ApiShowcaseShowcase extends Struct.CollectionTypeSchema {
     YTLink: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
-          localized: true;
+          localized: false;
         };
       }>;
   };
@@ -624,7 +624,7 @@ export interface ApiWorkWork extends Struct.CollectionTypeSchema {
     appLink: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
-          localized: true;
+          localized: false;
         };
       }>;
     article: Schema.Attribute.RichText &
@@ -647,7 +647,7 @@ export interface ApiWorkWork extends Struct.CollectionTypeSchema {
     githubLink: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
-          localized: true;
+          localized: false;
         };
       }>;
     locale: Schema.Attribute.String;
@@ -655,7 +655,7 @@ export interface ApiWorkWork extends Struct.CollectionTypeSchema {
     otherLink: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
-          localized: true;
+          localized: false;
         };
       }>;
     publishedAt: Schema.Attribute.DateTime;
@@ -663,7 +663,7 @@ export interface ApiWorkWork extends Struct.CollectionTypeSchema {
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
-          localized: true;
+          localized: false;
         };
       }>;
     tags: Schema.Attribute.Relation<'oneToMany', 'api::tag.tag'>;
