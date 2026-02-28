@@ -11,4 +11,10 @@ module.exports = ({ env }) => ({
   admin: {
     autoOpen: false,
   },
+
+  transfer: {
+    token: {
+      salt: env("TRANSFER_TOKEN_SALT"),
+    },
+  },
 });
