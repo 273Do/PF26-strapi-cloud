@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * showcase controller
+ * sandbox controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::showcase.showcase');
+module.exports = createCoreController('api::sandbox.sandbox');

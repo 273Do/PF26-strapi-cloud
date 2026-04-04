@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sandboxes",
+  "info": {
+    "singularName": "sandbox",
+    "pluralName": "sandboxes",
+    "displayName": "Sandbox"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    },
+    "contentLink": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

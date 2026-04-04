@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * showcase router
+ * sandbox router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::showcase.showcase');
+module.exports = createCoreRouter('api::sandbox.sandbox');

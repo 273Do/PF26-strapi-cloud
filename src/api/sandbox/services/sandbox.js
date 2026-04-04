@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * showcase service
+ * sandbox service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::showcase.showcase');
+module.exports = createCoreService('api::sandbox.sandbox');
