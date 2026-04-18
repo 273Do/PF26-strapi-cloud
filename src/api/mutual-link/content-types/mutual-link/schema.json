@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mutual_links",
+  "info": {
+    "singularName": "mutual-link",
+    "pluralName": "mutual-links",
+    "displayName": "MutualLink"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "htmlCode": {
+      "type": "text"
+    }
+  }
+}

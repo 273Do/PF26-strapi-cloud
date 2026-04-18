@@ -479,6 +479,34 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiMutualLinkMutualLink extends Struct.CollectionTypeSchema {
+  collectionName: 'mutual_links';
+  info: {
+    displayName: 'MutualLink';
+    pluralName: 'mutual-links';
+    singularName: 'mutual-link';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    htmlCode: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::mutual-link.mutual-link'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiSandboxSandbox extends Struct.CollectionTypeSchema {
   collectionName: 'sandboxes';
   info: {
@@ -1159,6 +1187,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::about.about': ApiAboutAbout;
+      'api::mutual-link.mutual-link': ApiMutualLinkMutualLink;
       'api::sandbox.sandbox': ApiSandboxSandbox;
       'api::tag.tag': ApiTagTag;
       'api::technology.technology': ApiTechnologyTechnology;
